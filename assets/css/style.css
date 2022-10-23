@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: initial;
+  }
+}
+
+body {
+  color: #171a20;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 5px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+a.logo {
+  height: 12px;
+  width: 100px;
+  color: inherit;
+}
+
+header a {
+  color: inherit;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 5px 10px; /*? modificar mas adelante */
+}
+
+header nav.center {
+  text-align: center;
+}
+
+header nav.right {
+  text-align: right;
+}
+
